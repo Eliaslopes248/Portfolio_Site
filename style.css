@@ -29,7 +29,12 @@ nav{
     gap: 40px;
     align-items: center;
     padding-left: 30px;
-    
+    transform: translateY(10%);
+}
+
+#linked-icon{
+    margin: auto;
+    transform: translateX(30vw);
 }
 
 nav a{
@@ -81,14 +86,15 @@ section{
 
 #hero-div2{
     width: 50%;
+    transform: translateY(-5vh);
 }
 
 
 .hero-img-con{
     background-color: black;
     overflow: hidden;
-    height: 70%;
-    width: 70%;
+    height: 350px;
+    width: 350px;
     border-radius: 50%;
     transform: translateY(-10vh);
     display: flex;
@@ -135,28 +141,62 @@ section{
 }
 
 .hero-parent i{
-    transform: translateY(66vh)translateX(-50vw);
+    transform: translateY(69vh)translateX(-50vw);
     animation: arrow 3s ease-in-out infinite;
 }
 
 @keyframes arrow {
     0%{
-        transform: translateY(66vh)translateX(-50vw);
+        transform: translateY(71vh)translateX(-50vw);
         opacity: 1;
     } 25%{
-        transform: translateY(69vh)translateX(-50vw);
+        transform: translateY(73vh)translateX(-50vw);
         opacity: .5;
     } 50%{
-        transform: translateY(66vh)translateX(-50vw);
+        transform: translateY(71vh)translateX(-50vw);
         opacity: 1;
     } 75%{
-        transform: translateY(69vh)translateX(-50vw);
+        transform: translateY(73vh)translateX(-50vw);
         opacity: .5;
     } 100%{
-        transform: translateY(66vh)translateX(-50vw);
+        transform: translateY(71vh)translateX(-50vw);
         opacity: 1;
     }
 }
+#seccards{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0px solid;
+    height: 70vh;
+    transform: translateY(40vh);
+}
+
+.cards{
+    border: 2px solid;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card1 img{
+    width: 120%;
+}
+
+.cards:hover{
+    box-shadow: 1px 1px 6px;
+}
+
+#icongit{
+    overflow: hidden;
+    
+}
+
+
 
 /*--------------------------section 2-----------------------*/
 
@@ -353,6 +393,7 @@ section{
     width: 100%;
     height: 100%;
     border: 0px solid;
+
 }
 
 .project-section h1{
@@ -364,6 +405,7 @@ section{
     border: 0px solid;
    margin-bottom: 0px;
    position: absolute;
+   transform: translateY(50vh);
 }
 
 .contact-form{
@@ -389,9 +431,23 @@ section{
 }
 
 .email-input{
-    width: 545px;
+    width: 515px;
     transform: translateY(30%);
     border: 1px solid black;
+}
+
+input{
+    transition: .2s;
+}
+input:hover{
+    background-color: rgb(240, 236, 236);
+}
+
+textarea{
+    transition: .2s;
+}
+textarea:hover{
+    background-color: rgb(240, 236, 236);
 }
 
 textarea{
@@ -437,7 +493,7 @@ textarea:focus{
     width: 50%;
     height: 80vh;
     border: 0px solid;
-    transform: translateX(48vw)translateY(5%);
+    transform: translateX(48vw)translateY(55%);
     position: absolute;
 }
 

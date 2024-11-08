@@ -14,13 +14,15 @@
 
     <section class="section">
         <nav>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Skills</a>
-            <a href="">Projects</a>
-            <a href="">Contact</a>
-
-            <img src="icons8-linked-in-30 (1).png" alt="">
+            <a id="home">Home</a>
+            <a id="abt">About</a>
+            <a id="skills">Skills</a>
+            <a id="projects">Projects</a>
+            <a id="contacts">Contact</a>
+           
+            <a id="linked-icon" href="https://www.linkedin.com/in/elias-lopes-273130297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                <img src="icons8-linked-in-30 (1).png" alt="">
+            </a>
         </nav>
 
         <div class="hero-parent">
@@ -36,15 +38,16 @@
                 <button>Learn more</button>
 
             </div>
+            
 
-            <i>
+            <i id="arrowfloat">
                 <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#5f6368"><path d="M450-800v526L202-522l-42 42 320 320 320-320-42-42-248 248v-526h-60Z"/></svg>
 
             </i>
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="aboutsection">
         <h1 class="abt-head1">About me</h1>
 
             <div class="abt-parent">
@@ -69,9 +72,9 @@
 
     </section>
 
-    <section class="section">
+    <section class="section" id="skillsection">
         <h1 class="skill-head1">&lt;Skills&gt;</h1>
-        <div class="skill-parent">
+        <div class="skill-parent" id="skillparent">
             <div class="skill-child">
                 <h1>My Education</h1>
                     <div class="edu-box">
@@ -135,7 +138,7 @@
                         <div class="rating">Competent</div>
                     </div>
 
-                    <div class="skill-bar">
+                    <div class="skill-bar" id="midbar">
                         <div class="skill-name">SQL</div>
                         <div class="bar"></div>
                         <div class="rating">Proficient</div>
@@ -174,61 +177,19 @@
     </section>
 
 
-    <section class="section">
+    <section class="section" id="seccards">
+        <div class="cards" id="card1">
+            <img src="acm.png" id="acm" alt="" srcset="">
+        </div>
 
-        <div class="project-section">
-            <h1>Projects</h1>
+        <div class="cards" id="icongit">
+            
+            <a href="https://github.com/Eliaslopes248?tab=repositories"><img src="githubicon.png" alt="" srcset=""></a>
         </div>
-    
-        <div id="top-projects">
-            <div class="projects">
-                <h1 class="project-title">Fresh <br> N <br> Fit</h1>
-                <button class="view" id="btn1">More Info</button>
-            </div>
-    
-            <div class="projects">
-                <h1>iPhone Showcase</h1>
-                <button class="view" id="btn2">More Info</button>
-            </div>
-    
-            <div class="projects">
-                <h1>Poke <br> Search</h1>
-                <button class="view" id="btn3">More Info</button>
-            </div>
-        </div>
-    
-        <div id="bottom-projects">
-            <div class="projects">
-                <h1>Tutoring <br> Landing-page</h1>
-                <button class="view" id="btn4">More Info</button>
-            </div>
-            <div class="projects">
-                <h1>Uptown <br> Fruits</h1>
-                <button class="view" id="btn5">More Info</button>
-            </div>
-            <div class="projects">
-                <h1>Pizza <br> Landing-page</h1>
-                <button class="view" id="btn6">More Info</button>
-            </div>
-        </div>
-    
-        <div id="square-projects">
-            <div class="projects">
-                <h1>Porsche 911 Showcase</h1>
-                <button class="view2" id="btn7">More Info</button>
-            </div>
-            <div class="projects">
-                <h1>Tic-Tac-Toe</h1>
-                <button class="view2" id="btn8">More Info</button>
-            </div>
-            <div class="projects">
-                <h1>Car Rental Site</h1>
-                <button class="view2" id="btn9">More Info</button>
-            </div>
-            <div class="projects">
-                <h1>To-Do list</h1>
-                <button class="view2" id="btn10">More Info</button>
-            </div>
+
+        <div class="cards">
+            <img src="shpe.png" alt="" srcset="">
+
         </div>
     
     </section>
@@ -237,22 +198,25 @@
 
     <section class="section" id="contact-section">
 
-        <h1>Lets Connect</h1>
-        <form action="" method="post" class="contact-form">
+        <h1>Let's Connect</h1>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
 
-            <div class="name-inputs">
-                <input type="text" placeholder="Enter First Name...">
-                <input type="text" placeholder="Enter Last Name...">
-            </div>
+                <!-- Replace "YOUR_ACCESS_KEY" with your actual Web3Forms API key -->
+                <input type="hidden" name="access_key" value="6be26c24-f6b6-47c9-a796-1e3e89767269">
 
-            <input type="text" placeholder="Enter Email..." class="email-input">
+                <div class="name-inputs">
+                    <input type="text" name="first_name" placeholder="Enter First Name...">
+                    <input type="text" name="last_name" placeholder="Enter Last Name...">
+                </div>
 
-            <textarea name="" id="" cols="30" placeholder="Enter Message..."></textarea>
+                <input type="email" name="email" placeholder="Enter Email..." class="email-input">
 
-            <button>Submit</button>
+                <textarea name="message" cols="30" placeholder="Enter Message..."></textarea>
 
+                <button type="submit">Submit</button>
 
-        </form>
+            </form>
+
     </section>
     
     <div class="quote-con">
@@ -272,6 +236,52 @@
     <script src="index.js"></script>
 
 </body>
+<script>
+    //links
+    let homebtn = document.getElementById('home')
+    let abtbtn = document.getElementById('abt')
+    let skillsbtn = document.getElementById('skills')
+    let projectsbtn = document.getElementById('projects')
+    let contactsbtn = document.getElementById('contacts')
+    let arrow = document.getElementById('arrowfloat')
+
+
+    //sects
+    let homesection = document.getElementById('hero-div1')
+    let aboutsection = document.getElementById('aboutsection')
+    let skillsection = document.getElementById('seccards')
+    let projectsection = document.getElementById('seccards')
+    let contactsections = document.getElementById('contact-section')
+
+    //event listeners
+    homebtn.addEventListener('click',()=>{
+        homesection.scrollIntoView({behavior:"smooth"})
+    })
+
+    arrow.addEventListener('click',()=>{
+        aboutsection.scrollIntoView({behavior:"smooth"})
+    })
+
+    abtbtn.addEventListener('click',()=>{
+        aboutsection.scrollIntoView({behavior:"smooth"})
+    })
+
+    skillsbtn.addEventListener('click',()=>{
+        aboutsection.scrollIntoView({behavior:"smooth"})
+    })
+
+
+    projectsbtn.addEventListener('click',()=>{
+        projectsection.scrollIntoView({behavior:"smooth"})
+    })
+
+    contactsbtn.addEventListener('click',()=>{
+        contactsections.scrollIntoView({behavior:"smooth"})
+    })
+
+
+</script>
+
 
 
 </html>
